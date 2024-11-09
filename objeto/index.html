@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetivos de Ridelvan - Criados em 09/11/2024 às 18:31 ouvindo EYEDRESS - SOMETHING ABOUT YOU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+            color: #76d7c4;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .subheading {
+            font-size: 18px;
+            color: #bbb;
+            margin-bottom: 30px;
+        }
+        .date-info {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 2px solid #444;
+            font-size: 16px;
+            color: #ccc;
+        }
+        .date-info strong {
+            color: #76d7c4;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #2c2c2c;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+        .item-text {
+            display: flex;
+            align-items: center;
+        }
+        .item-text img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+        input[type="checkbox"] {
+            margin-right: 15px;
+            accent-color: #76d7c4;
+        }
+        .progress-bar-container {
+            margin-top: 25px;
+            width: 100%;
+            background-color: #444;
+            border-radius: 10px;
+        }
+        .progress-bar {
+            height: 30px;
+            width: 0;
+            background-color: #76d7c4;
+            border-radius: 10px;
+        }
+        .progress-text {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ccc;
+        }
+        .congratulations {
+            font-size: 20px;
+            color: #76d7c4;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Objetivos de Ridelvan</h1>
+        <p class="subheading">Criados em 09/11/2024 às 18:31 ouvindo <strong>EYEDRESS - SOMETHING ABOUT YOU</strong></p>
+        
+        <ul>
+            <li>
+                <div class="item-text">
+                    <img src="img/ingles.jpeg" alt="Aprender Inglês">
+                    <span>Aprender inglês</span>
+                </div>
+                <input type="checkbox" id="english">
+            </li>
+            <li>
+                <div class="item-text">
+                    <img src="img/s10.webp" alt="Comprar Carro">
+                    <span>Comprar um carro S10</span>
+                </div>
+                <input type="checkbox" id="car">
+            </li>
+            <li>
+                <div class="item-text">
+                    <img src="img/bmw.jpg" alt="Comprar Moto">
+                    <span>Comprar uma moto BMW R 1200 GS</span>
+                </div>
+                <input type="checkbox" id="moto">
+            </li>
+            <li>
+                <div class="item-text">
+                    <img src="img/100k.jpeg" alt="100 mil em dinheiro">
+                    <span>Ter 100 mil em dinheiro</span>
+                </div>
+                <input type="checkbox" id="100mil">
+            </li>
+            <li>
+                <div class="item-text">
+                    <img src="img/150k.jpeg" alt="150 mil em pix e investimentos">
+                    <span>Ter 150 mil em pix e investimentos</span>
+                </div>
+                <input type="checkbox" id="150mil">
+            </li>
+            <li>
+                <div class="item-text">
+                    <img src="img/casa.jpeg" alt="Comprar Casa">
+                    <span>Comprar uma casa em Gonçalves Dias, MA</span>
+                </div>
+                <input type="checkbox" id="casa">
+            </li>
+            <li>
+                <div class="item-text">
+                    <img src="img/negocio.jpeg" alt="Ter um Negócio">
+                    <span>Ter um negócio em Gonçalves Dias, MA</span>
+                </div>
+                <input type="checkbox" id="negocio">
+            </li>
+            <li>
+                <div class="item-text">
+                    <img src="img/youtuber.png" alt="80 mil inscritos no YouTube">
+                    <span>Ter 80 mil inscritos no YouTube</span>
+                </div>
+                <input type="checkbox" id="formar">
+            </li>
+            <li>
+                <div class="item-text">
+                    <img src="img/instagran.png" alt="150 mil seguidores Instagram">
+                    <span>Ter 150 mil seguidores no Instagram</span>
+                </div>
+                <input type="checkbox" id="seguidores">
+            </li>
+            <li>
+                <div class="item-text">
+                    <img src="img/se formar.jpeg" alt="Se Formar">
+                    <span>Se formar</span>
+                </div>
+                <input type="checkbox" id="inscritos">
+            </li>
+        </ul>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div class="progress-text" id="progress-text">Progresso: 0%</div>
+
+        <div class="congratulations" id="congratulations">
+            <p>Parabéns, Dell! Você está pronto para voltar para Gonçalves Dias!</p>
+        </div>
+
+        <div class="date-info">
+            <p><strong>Objetivos criados em:</strong> 09/11/2024 às 18:31</p>
+            <p><strong>Escutando:</strong> EYEDRESS - SOMETHING ABOUT YOU</p>
+        </div>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const progressBar = document.getElementById('progress-bar');
+        const progressText = document.getElementById('progress-text');
+        const congratulationsMessage = document.getElementById('congratulations');
+
+        // Função para calcular o progresso
+        function updateProgress() {
+            let completed = 0;
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    completed++;
+                }
+            });
+
+            // Calcula a porcentagem de progresso
+            let progress = (completed / checkboxes.length) * 100;
+            progressBar.style.width = progress + '%';
+            progressText.textContent = `Progresso: ${Math.round(progress)}%`;
+
+            // Verifica se o progresso atingiu 100%
+            if (progress === 100) {
+                congratulationsMessage.style.display = 'block';
+                // Abre o link do YouTube
+                window.open('https://www.youtube.com/watch?v=0VAAS9xnS5U&ab_channel=EYEDRESS', '_blank');
+            } else {
+                congratulationsMessage.style.display = 'none';
+            }
+        }
+
+        // Adiciona eventos para atualizar o progresso quando um objetivo for marcado/desmarcado
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateProgress);
+        });
+
+        // Chama a função para definir o progresso inicial
+        updateProgress();
+    </script>
+
+</body>
+</html>
